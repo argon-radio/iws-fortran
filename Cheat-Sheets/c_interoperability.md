@@ -58,7 +58,7 @@ struct {
 ```f90
 program main
     use iso_c_binding
-    integer(kind=c_int), bind(c, name="") :: global_var ! In C sichtbar
+    integer(kind=c_int), bind(c, name="global_var") :: global_var ! In C sichtbar
     integer :: global_var2 ! In C unsichtbar
 
     ! Code
