@@ -1,4 +1,4 @@
-# Building Exercise
+# Exercise - Building
 
 In dieser Aufgabe soll das Aufrufen des Compilers und seiner verschiedenen Optionen durchgeführt werden.
 Alle hier verwendeten Optionen sind im [Cheat-Sheet](../Cheat-Sheets/building.md) für Building aufgelistet.
@@ -46,14 +46,14 @@ Merke dir diese Ausgabe für die nächste Aufgabe
 
 Optional kannst du nun ein weiteres Modul in einer dritten Datei anlegen.
 
-### Statische Bibliothek
+### 3.1 Statische Bibliothek
 
 Nehme nun deine Module und erzeuge aus ihnen eine statische Bibliothek, indem du sie erst zu Objekten kompilierst und anschließend in einem Archiv zusammenfasst.
 Die notwendigen Befehle hierfür findest du ebenfalls im [Cheat-Sheet](../Cheat-Sheets/building.md) für Building.
 
 Anschließend kann die Bibliothek zusammen mit `hello.f90` beim Kompilieren verwendet werden.
 
-### Dynamische Bibliotheken
+### 3.2 Dynamische Bibliotheken
 
 Erzeuge nun aus deinen Modulen eine dynamische Bibliothek und kompiliere dein `hello.f90` zusammen mit ihr.
 Führe das Programm noch nicht aus, sondern schaue dir zunächst wieder mit `ldd` die von diesem Programm benötigten Bibliotheken an.

@@ -86,6 +86,8 @@ end function testf
 kann in C einfach aufgerufen werden:
 
 ```c
+int testf(int a); // Function Prototype verhindert Compiler-Warnungen
+
 b = testf(a);
 ```
 
