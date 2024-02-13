@@ -40,7 +40,7 @@ Diese neue Funktion soll ein Argument erhalten und einen Rückgabewert haben (C-
 
 Nun zu einer etwas größeren Aufgabe.
 Übergebe nun anstatt einer Zahl einen String an Fortran und gebe ihn mit Fortran auf der Konsole aus.
-Schreibe dafür eine Subroutine und nutze zur Konvertierung des übergeben Strings die Funktion `cfconvert` aus dem Modul `strconv_lib`.
+Schreibe dafür eine Subroutine und nutze zur Konvertierung des übergeben Strings die Funktion `cfconvert` aus dem Modul [strconv_lib](./strconv_lib.f90).
 
 _Tipp: Die Größe des Strings in Fortran muss nicht sofort festgelegt werden, man benötigt aber die Länge des Strings schon als Wert von C. Einfacher ist es, wenn man zunächst die maximale Länge des Strings festlegt._
 
