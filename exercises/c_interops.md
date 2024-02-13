@@ -53,24 +53,18 @@ _Erinnerung: Um eine C-Funktion in Fortran verwenden zu können, muss sie im For
 
 ### 2.1 Void function without arguments
 
-03:30 Minuten (33:00) → 3
-
-Beginne wieder mit einem einfachen Programm, bei dem diesmal `main` in Fortran geschrieben und die verwendeten Prozeduren in C geschrieben sind.
+Beginne wieder mit einem einfachen Programm, bei dem diesmal `main` in Fortran und die verwendeten Prozeduren in C geschrieben sind.
 Mache auch diesmal in beiden Programmteilen jeweils Ausgaben auf der Konsole.
 
 _Tipp: Da die C-Funktion keinen Rückgabewert (`void`) hat, definiere zunächst im Interface dafür eine Subroutine._
 
 ### 2.2 Add function Argument (integer)
 
-02:00 Minuten (35:00) → 2
-
 Verändere nun den Code so, dass die C-Funktion eine Zahl als Argument nimmt und auf der Konsole ausgibt.
 
 _Tipp: In C gibt es "pass-by-value" und "pass-by-reference". Nutze in diesem Fall "pass-by-value"._
 
 ### 2.3 Add return value
-
-03:00 Minuten (38:00) → 3
 
 Erweitere nun den Programmcode so, dass die C-Funktion einen Rückgabewert vom Typ `int` hat.
 Gib diesen Rückgabewert in Fortran auf der Konsole aus.
@@ -80,33 +74,23 @@ Gib diesen Rückgabewert in Fortran auf der Konsole aus.
 08:00 Minuten (46:00) → 5
 
 Bisher wurden nur Zahlen über- und zurückgegeben.
-Wie vorher in [1](#1---call-fortran-procedures-from-c) soll nun ein String das Argument für die Funktion sein.
+Wie vorher in [1](#1-fortran-aufgerufen-von-c) soll nun ein String das Argument für die Funktion sein.
 
 Schreibe hierfür die C-Funktion so um, dass sie einen String als Argument und keinen Rückgabewert mehr hat.
 In Fortran definiere nun wieder eine Subroutine im Interface, welche als Argument ein beliebig großes `character` array als argument erhält.
 
 _Tipp: In C ist `char *s` äquivalent zu `char s[]`._
-_Achtung: In C sind Strings immer durch NULL terminiert. Beim Aufruf der C-Funktion in Fortran sollte daher ein `c_null_char` am Ende des Strings sein._
+_Achtung: In C sind Strings immer durch NULL terminiert. Beim Aufruf der C-Funktion in Fortran sollte daher ein `c_null_char` am Ende des Strings sein. Strings können ganz einfach mit `//` aneinandergehängt werden._
 
-## 3 Other Types
+## 3 Structs und Types
 
-Nun betrachten wir die Kompatibilität ein paar anderer Datentypen.
-
-### 3.1 C Struct
+Nun betrachten wir die Kompatibilität von abgeleiteten Datentypen.
 
 Bisher haben wir nur Intrinsische Datentypen und Strings (als Array) übergeben.
-Sowohl C als auch Fortran kennen aber auch andere Datentypen: Das `struct` in C bzw. den abgeleiteten `type` in Fortran
+Sowohl C als auch Fortran kennen aber auch das `struct` in C bzw. den abgeleiteten `type` in Fortran
 
 Schreibe nun ein Programm in C, dass eine Subroutine von Fortran aufruft und dabei ein Struct übergibt.
-Das Struct soll in Fortran mit werten befüllt werden.
+Das Struct soll in Fortran mit Werten befüllt werden.
 Diese Änderungen sollen für C sichtbar sein.
 
 _Tipp: Das Object muss hierbei in beiden Sprachen definiert sein. Übergebe das Struct in C als Referenz, z.B. so: `&s`._
-
-### 3.2.1 Pointers - Code Example
-
-was ist ein pointer in Fortran?
-
-### 3.2.2 Function Pointers - Code Example
-
-...
