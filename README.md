@@ -16,3 +16,5 @@ Dieses Repo enthält Dateien und Informationen für den Informatik-Workshop im W
 - [Aufgabenpool](exercises/pool/)
 - [Interoperabilität mit C](exercises/c_interops/c_interops.md)
 - [Parallelisierung](.)
+
+Die Lösungen für die Aufgaben finden sich nach der Bearbeitungszeit neben den Aufgabenstellungen.
