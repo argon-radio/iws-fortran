@@ -5,11 +5,14 @@ Dieses Repo enthält Dateien und Informationen für den Informatik-Workshop im W
 ## Cheat-Sheets
 
 - [Building Programs](Cheat-Sheets/building.md)
+- [File I/O](Cheat-Sheets/I_O_und_allc.md)
 - [Interoperabilität mit C](Cheat-Sheets/c_interoperability.md)
 
 ## Aufgaben
 
-1. [Basics](.)
-2. [Building Programs](exercises/building/building.md)
-3. [Interoperabilität mit C](exercises/c_interops/c_interops.md)
-4. ?
+- [Basics](.)
+- [Building Programs](exercises/building/building.md)
+- [File I/O](.)
+- [Aufgabenpool](exercises/pool/)
+- [Interoperabilität mit C](exercises/c_interops/c_interops.md)
+- [Parallelisierung](.)
