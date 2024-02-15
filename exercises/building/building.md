@@ -34,7 +34,7 @@ Binde das Modul in vorher erzeugte Programm "hello" ein und rufe die Subroutine 
 Am einfachsten übergibt man beide Quellcodedateien direkt dem Compiler:
 
 ```sh
-gfrotran hello.f90 lib.f90
+gfortran hello.f90 lib.f90
 ```
 
 Nun erzeuge aus alle Quellcodedateien zunächst Objekte und Linke diese anschließend (geht alles mit `gfortran`).
