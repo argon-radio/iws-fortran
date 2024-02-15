@@ -1,8 +1,8 @@
 # Wochentag
 
 Ziel dieser Aufgabe ist die Bestimmung des Wochentags an einem gegebenen Datum mithilfe einer Funktion.
-Bekannt ist hierfür der Algorithmus von Gauß, der die Berechnung des Wochentags nach dem Gregorianischen Kalender ermöglicht und dabei jedem Wochentag eine Zahl von 0 (Montag) bis 6 (Sonntag) zuordnet.
-Für diese Aufgabe nutzen wir eine Abgewandelte Version, die auch über das Jahr 2100 hinaus korrekte Werte liefert.
+Bekannt ist hierfür der Algorithmus von Gauß, der die Berechnung des Wochentags nach dem Gregorianischen Kalender ermöglicht und dabei jedem Wochentag eine Zahl zuordnet.
+Für diese Aufgabe nutzen wir eine Abgewandelte Version, die auch über das Jahr 2100 hinaus korrekte Werte liefert und die Zahlen 0 dem Samstag bis 6 dem Freitag zuordnet.
 
 Bei gegebenen Datum mit d (Tag), m (Monat) und y (Jahr) erfolgt die Berechnung folgendermaßen:
 
