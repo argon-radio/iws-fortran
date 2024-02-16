@@ -43,8 +43,6 @@ program basicOperators
     print *, "Logic: TRUE OR (TRUE AND FALSE) = ", .true. .or. (.true. .and. .false.)
     print *, "Logic: TRUE <==> (NOT FALSE) = ", .true. .eqv. .not. .false.
 
-    !-- let's test this
-
     !-- note that "unequal" is not "!=" but "/="
 
     print *, "5 /= 4 = ", 5 /= 4 
