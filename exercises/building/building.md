@@ -15,7 +15,7 @@ Quell-Code Beispiel für "Hello, World!":
 
 ```f90
 program hello
-   intrinsic none
+   implicit none
    print *, "Hello, World!"
 end program hello
 ```
