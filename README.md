@@ -11,7 +11,7 @@ Dieses Repo enthält Dateien und Informationen für den Informatik-Workshop im W
 
 ## Aufgaben
 
-- [Basics](.)
+- [Basics](exercises/Basics/)
 - [Building Programs](exercises/building/building.md)
 - [File I/O](exercises/ReadCSV/)
 - [Aufgabenpool](exercises/pool/)
