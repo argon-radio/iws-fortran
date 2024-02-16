@@ -62,8 +62,6 @@ program basicIO
     greeting = "Hello "//trim(name)//" "//trim(second_name) !-- use "trim(x)" to remove unnecessary spaces due to centre aligning
     print *, greeting
 
-    !-- let's test that very quick
-
     !-- let's use a specific name so we all share the same results from now on:
     name = "Patrick"
     second_name = "Star"
@@ -77,15 +75,11 @@ program basicIO
     name = greeting(n:m-2) !-- minus 2 because we want to skip the first letter of "Star" and the blank space
     print *, name !-- print substrings using ranges
 
-    !-- let's test that
-
     !-- now, suppose we want to omit only "hello":
     n = index(greeting, "Patrick") !-- no change here
     m = len(greeting)   !-- len(x) returns the length of string x (len(x) is the index of the last character, because fortran is 1-based!)
     full_name = greeting(n:m)   !-- Fortran has ranges 
     print *, full_name
-
-    !-- let's test that
 
     !-- Output is normally centre aligned
 
@@ -96,14 +90,10 @@ program basicIO
     print "(3i5)", 7 ,6, 8, 9 !-- read: "print 3 integers with width 5"; the rest will be printed into new lines
     print "(i5)", 7, 6, 8
     print *, 7, 6, 8 !-- !-- default=centre aligned when default
-
-    !-- let's test that
     
     !-- for integers, there's another neat formatting option:
     print *, 1327
     print "(i0)", 1327  !-- "i0" means: "use as few spaces as possible"
-
-    !-- let's test that
 
     !-- float works analogously to integer formatting but with 'f' instead of 'i'
 
@@ -111,8 +101,6 @@ program basicIO
     print "(2f20.5)", 3.1415926, 1.2345 !-- notice the indentation due to length 20
     print "(2f5.3)", 3.1415926, 1.2345 !-- notice the rounding of the values and how there's no space between them?
     print "(2f5.3)", 3.1414926, 1.2345 !-- notice the rounding of the values and how there's no space between them?
-    
-    !-- let's test that
 
     !-- exponential notation works analogously:
 
@@ -120,29 +108,21 @@ program basicIO
     print "(e20.4)", 123.456
     print "(e30.1)", 123.456, 456.789
 
-    !-- let's test that
-
     !-- character string formatting with 'a'
 
     print "(2a8)", "Name", "Age"
     print *, "Name", "Age"  !-- notice the difference?
     print "(2a)", "Name", "Age"
 
-    !-- let's test that
-
     !-- combining formatting
 
     print "(a13, i2)", "The answer is ", 42
     print "(a13 i2)", "The answer is ", 42 !-- works like this, too
 
-    !-- let's test that
-
     !-- converting into string
     
     write (some_string, "(i5)") 42
     print "(a,a)", "The answer is ", adjustl(some_string)
-
-    !-- let's test that
 
     !-- how to handle quotation marks for strings:
 
@@ -153,15 +133,11 @@ program basicIO
     print "('You can also place the text in the formatter! ' i2)", 23
     print "('If you don''t want to count or estimate the amount of places needed for a number, you can use ""i0"": ' i0)", 1327
 
-    !-- let's test that
-
     !-- print formatted output using labels:
 
     do n = 1, 10
         print 100, n, n * 8 !-- we can use numbers like "100" as labels
         100 format(i2, " * 8 = ", i3)   !-- here, we specify the label format
     end do
-
-    !-- let's test that
 
 end program basicIO
