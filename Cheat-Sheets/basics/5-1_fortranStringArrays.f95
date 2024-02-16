@@ -16,6 +16,4 @@ program fortranStringArray
         print *, string_arr(n)
     end do
 
-    !hier passt was ni ht
-
 end program fortranStringArray
