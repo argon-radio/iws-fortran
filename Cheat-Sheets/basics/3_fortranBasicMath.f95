@@ -54,6 +54,4 @@ program fortranBasicMath
     print "('dim(4,3) = ' i0)", dim(4,3)
     print "('idim(4,3) = ' i0)", idim(4,3)
 
-    !-- let's test this
-
 end program fortranBasicMath
