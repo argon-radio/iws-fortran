@@ -1,4 +1,4 @@
-##Zahlenratespiel
+# Zahlenratespiel
 
 Ziel dieser Aufgabe ist es, ein Zahlenratespiel zu entwickeln. Dabei soll dem 
 Rechner vom Nutzer mitgeteilt werden, wie viele Versuche der Spieler erhält. 
