@@ -26,15 +26,11 @@ program basicTypes
     print *, "can_vote", can_vote
     print *, "character = ", month
 
-    !-- let's test this
-
     !-- replacing "print *" with print "ax, iy": ax = x space for text, iy = y space for integer --!
     
     print "(a4, i10)", "Int ", kind(i_num) !-- kind(...) returns number of bytes
     print "(a5, i10)", "Real ", kind(r_num)
     print "(a7, i10)", "Double ", kind(dbl_num)
     print "(a8, i10)", "Logical ", kind(can_vote)
-
-    !-- let's test it
     
 end program basicTypes
