@@ -56,13 +56,6 @@ program fortranArrays
     print "(a20,3f5.2)", "real_mat(:,1) = ", real_mat(:,1) !-- print first column of matrix
     print "(a20,3f5.2)", "real_mat(1, :) = ", real_mat(1, :) !-- print first row of matrix
     print "(a20,5i3)", "int_arr(5:1:-1) = ", int_arr(5:1:-1) !--print array in reverse
-    ! print *, "int_arr(1:3) = ", int_arr(1:3) !-- print array int_arr indices 1 to 3
-    ! print *, "int_arr(1:3:2) = ", int_arr(1:3:2) !-- print array int_arr indices from 1 to 3 in steps of 2
-    ! print *, "real_mat(:,1) = ", real_mat(:,1) !-- print first column of matrix
-    ! print *, "real_mat(1, :) = ", real_mat(1, :) !-- print first row of matrix
-    ! print *, "int_arr(5:1:-1) = ", int_arr(5:1:-1) !--print array in reverse
-
-
 
     print *, "" !-- empty line so it's easier to distinguish the two matrices
 
