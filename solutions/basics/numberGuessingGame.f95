@@ -2,11 +2,11 @@ program numberGuessingGame
     implicit none 
 
     real :: rand
-    integer :: input, low, high, roundCount
+    integer :: input, low, high, roundCount, max_rounds
     logical :: foundNumber = .false.
 
     print *, "How many guesses should the player have?"
-    read *, roundCount
+    read *, max_rounds
 
     print *, "In what range should the random number be? Enter lower and upper bounds:"
     read *, low, high
@@ -16,7 +16,7 @@ program numberGuessingGame
 
     print "('Guess the random number. You have ' i0 ' tries!')", roundCount
 
-    do roundCount = 1, 3
+    do roundCount = 1, max_rounds
         print *, "Your guess:"
         read *, input
 
