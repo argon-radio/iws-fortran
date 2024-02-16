@@ -1,4 +1,4 @@
-# Fibonacchi Sequenz
+# Fibonacci Sequenz
 
 Ziel dieser Aufgabe ist es, eine Prozedur zur Berechnung der n-ten Zahl der Fibonacci-Sequenz in Fortran zu schreiben.
 
