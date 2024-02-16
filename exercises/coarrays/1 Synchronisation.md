@@ -1,7 +1,7 @@
 # Synchronisation
 
 ## Beschreibung
-Diese Aufgabe soll verdeutlichen, wie Coarrays synchronisiert werden und warum es wichtig ist. Es wird eine Ausgabe erzeugt, die wegen fehlender Synchronisation eine falsche Ausgabe liefert. Danach wird diese Ausgabe mit Synchronisation wiederholt und verglichen.
+Diese Aufgabe soll verdeutlichen, wie Coarrays synchronisiert werden und warum es wichtig ist. Es wird eine Ausgabe erzeugt, die aufgrund fehlender Synchronisation eine falsche Ausgabe liefert. Danach wird diese Ausgabe mit Synchronisation wiederholt und verglichen.
 
 Den Fehler `Coarrays disabled at (1), use '-fcoarray=' to enable` könnt ihr ignorieren.
 
@@ -10,7 +10,7 @@ Den Fehler `Coarrays disabled at (1), use '-fcoarray=' to enable` könnt ihr ign
    - ein Coarray vom Typ Integer Skalar
    - eine Counter Variable für die Ausgabe
 
-2. Simulieren, das ein Image zu lange braucht  
+2. Simulieren, dass ein Image zu lange braucht  
    Damit wir eine fehlerhafte Ausgabe bekommen müssen wir ein Image solange pausieren, dass die anderen Images auf eine Variable dieses Images zugreifen, obwohl diese noch nicht initialisiert wurde.
    Welches Image pausiert wird ist egal, solange es nicht das erste ist.
    Man kann die Ausführung von Code mit der Funktion `sleep()` pausieren.

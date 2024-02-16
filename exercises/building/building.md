@@ -1,7 +1,7 @@
 # Exercise - Building
 
 In dieser Aufgabe soll das Aufrufen des Compilers und seiner verschiedenen Optionen durchgeführt werden.
-Alle hier verwendeten Optionen sind im [Cheat-Sheet](../Cheat-Sheets/building.md) für Building aufgelistet.
+Alle hier verwendeten Optionen sind im [Cheat-Sheet](../../Cheat-Sheets/building.md) für Building aufgelistet.
 
 ## 1 Einfache Compiler-Aufrufe
 
@@ -15,7 +15,7 @@ Quell-Code Beispiel für "Hello, World!":
 
 ```f90
 program hello
-   intrinsic none
+   implicit none
    print *, "Hello, World!"
 end program hello
 ```
@@ -34,7 +34,7 @@ Binde das Modul in vorher erzeugte Programm "hello" ein und rufe die Subroutine 
 Am einfachsten übergibt man beide Quellcodedateien direkt dem Compiler:
 
 ```sh
-gfrotran hello.f90 lib.f90
+gfortran hello.f90 lib.f90
 ```
 
 Nun erzeuge aus alle Quellcodedateien zunächst Objekte und Linke diese anschließend (geht alles mit `gfortran`).
@@ -49,7 +49,7 @@ Optional kannst du nun ein weiteres Modul in einer dritten Datei anlegen.
 ### 3.1 Statische Bibliothek
 
 Nehme nun deine Module und erzeuge aus ihnen eine statische Bibliothek, indem du sie erst zu Objekten kompilierst und anschließend in einem Archiv zusammenfasst.
-Die notwendigen Befehle hierfür findest du ebenfalls im [Cheat-Sheet](../Cheat-Sheets/building.md) für Building.
+Die notwendigen Befehle hierfür findest du ebenfalls im [Cheat-Sheet](../../Cheat-Sheets/building.md) für Building.
 
 Anschließend kann die Bibliothek zusammen mit `hello.f90` beim Kompilieren verwendet werden.
 

@@ -9,7 +9,7 @@ Bei gegebenen Datum mit d (Tag), m (Monat) und y (Jahr) erfolgt die Berechnung f
 ```txt
 Tag der Woche = (d + ((m+1)*26)/10 + k + k/4 + j/4 + 5*j) % 7
 mit
-m = m + 12 und y = y - 1, für m < 2
+m = m + 12 und y = y - 1, für m <= 2
 j = y / 100
 k = y mod 100
 ```
