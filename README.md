@@ -4,6 +4,7 @@ Dieses Repo enthält Dateien und Informationen für den Informatik-Workshop im W
 
 ## Cheat-Sheets
 
+- [Basics](Cheat-Sheets/basics/)
 - [Building Programs](Cheat-Sheets/building.md)
 - [File I/O](Cheat-Sheets/I_O_und_allc.md)
 - [Interoperabilität mit C](Cheat-Sheets/c_interoperability.md)
